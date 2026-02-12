@@ -5,7 +5,7 @@ public class Main {
         Integer[] array = new Integer[length];
 
         for (int i = 0; i < length; i++) {
-            array[i] = i; // ascendente
+            array[i] = i;
         }
 
         return array;
@@ -15,7 +15,7 @@ public class Main {
         Integer[] array = new Integer[length];
 
         for (int i = 0; i < length; i++) {
-            array[i] = length - 1 - i; // descendente
+            array[i] = length - 1 - i;
         }
 
         return array;
@@ -26,17 +26,17 @@ public class Main {
         java.util.Random random = new java.util.Random();
 
         for (int i = 0; i < length; i++) {
-            array[i] = random.nextInt(length); // sin orden
+            array[i] = random.nextInt(length);
         }
 
         return array;
     };
 
-    private static final QuickSort<Integer> highPivotQuickSort = null; // Reemplácelo por una referencia a un método
+    private static final QuickSort<Integer> highPivotQuickSort = SortingAlgorithms::highPivotQuickSort;
 
-    private static final QuickSort<Integer> lowPivotQuickSort = null; // Reemplácelo por una referencia a un método
+    private static final QuickSort<Integer> lowPivotQuickSort = SortingAlgorithms::lowPivotQuickSort;
 
-    private static final QuickSort<Integer> randomPivotQuickSort = null; // Reemplácelo por una referencia a un método
+    private static final QuickSort<Integer> randomPivotQuickSort = SortingAlgorithms::randomPivotQuickSort;
 
     public static QuickSort<Integer> getHighPivotQuickSort() {
         return highPivotQuickSort;
